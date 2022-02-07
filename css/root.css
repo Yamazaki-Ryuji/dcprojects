@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*font-family: 'Bebas Neue', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*font-family:'Roboto', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Roboto', sans-serif;
+    color: var(--txt-color);}
+
+:root {
+    --big-title: 60px;
+    --big-title2: 50px;
+    --medium-title: 30px;
+    --small-title: 15px;
+    --small-medium-title: 20px;
+    --small-tag: 15px;
+    --para: 15px;
+    --first-color: #7841E6;
+    --bcg-clr: linear-gradient(#7A04EB, #120458);
+    --scd-color: #FA5B37;
+    --first-font: 'Bebas Neue', cursive;
+    --second-font: 'Roboto', sans-serif;
+    --txt-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--first-font);
+}
+
+body{
+    background: var(--bcg-clr);
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    padding: 20px 6.4%;
+}
+
+.logo {
+    width: 82px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.navlinks-desk {
+    display: none;
+}
+
+.navlinks-mob {
+    z-index: 2;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    color: var(--txt-color);
+    background-color: var(--first-color);
+    height: 100vh;
+    padding: 0 0 0 21.2%;
+    left: -100%;
+    height: 100vh;
+    transition: left 0.5s ease-in;
+}
+
+.cont-nav {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 300px;
+    height: 249px;
+}
+
+.navlinks-mob li {
+    margin: 20px 0;
+    padding: 9px 0;
+    border-bottom: 2px solid #fff;
+    opacity: 0;
+}
+
+.navlinks-mob a {
+    color: var(--txt-color);
+}
+
+.burger {
+    position: relative;
+    z-index: 2;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(#E86746, #7600FF);
+    border-radius: 50px;
+    padding: 15.5px 12.4px;
+}
+
+.burger div {
+    background-color: white;
+    margin-bottom: 5px;
+    border-radius: 50px;
+    width: 20.3px;
+    height: 2px;
+    transition: all 0.3s ease, opacity 0.3s ease;
+}
+
+.burger .line3 {
+    margin-bottom: 0;
+}
+
+.nav-active {
+    left: 0;
+
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.nav-link li {
+    opacity: 0;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-6px, -6px);
+}

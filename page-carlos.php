@@ -5,4 +5,4 @@ Template Name: Page de carlos
 ?>
 
 
-<p><?php CA_the_fieldText('custom_page_paragraphe');?></p>
+<p><?php SC_the_field('custom_page_paragraphe');?></p>

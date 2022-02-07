@@ -13,9 +13,8 @@ function SC_the_field($selector,$post_id=false,$format_value=true,$return=''){
 //gestion tableau image
 function SC_get_image_field($selector,$post_id=false,$type=['thumbnail','medium','large'],$format_value=true,$return=false){
 	$img = SC_get_field($selector,$post_id,$format_value,$return);
-	SC_printr_($img);
 	if( is_array($img) ){
-		return '<img src="'.$img['sizes']['thumbnail'].'" srcset=" 970w, 768w" alt="'.$img['alt'].'">';
+		return '<img src="'.$img['sizes']['thumbnail'].'" alt="'.$img['alt'].'">';
 	}
 	return $return;
 }

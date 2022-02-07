@@ -1,0 +1,234 @@
+
+
+
+.titre{
+    text-shadow: 0 0 4px #fff;
+    color: var(--txt-color);
+    display: flex;
+    justify-content: center;
+}
+.titre h1{
+    font-size: var(--big-title2);
+}
+span{
+    margin-left: 20px;
+    display: block;
+}
+.wp-content p{}
+
+.apropos-photo{
+    position: relative;
+}
+.apropos-photo .decoration-x {
+    position: absolute;
+    width: 100px;
+    left: 20%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+.grade-nom2{
+display: none;
+}
+.apropos-photo-text{
+    width: 100%;
+}
+.apropos-photo img{
+    padding: 4px 0;
+}
+.apropos-photo .image1{
+width: 80%;
+float: right;
+}
+.apropos-photo .image2{
+    width: 100%;
+}
+.apropos-photo-text .wp-content{
+    width: 290px;
+    margin: 60px auto;
+    font-size: var(--small-title);
+}
+.membre{
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+.grade-nom{
+    display: inline-block;
+    font-size: var(--small-title);
+}
+.membre h2{
+    text-shadow: 0 0 6px rgba(249, 91, 55, 0.58);
+    color: #fa5b37;
+    font-size: 32px;
+    font-size: var(--medium-title);
+
+}
+.membre .gauche img{
+    width: 100%;
+	height:auto;
+	display:block;
+}
+.membre-text{
+    width: 290px;
+    margin: 20px auto;
+    font-size: var(--small-title);
+}
+.competences{
+    width: 100%;
+    margin: 10px 0;
+}
+.competence{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.competence img{
+
+}
+.competence p{
+    font-size: var(--small-medium-title);
+    position:absolute ;
+    color: white;
+    z-index: 2;
+    top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+.grade{
+    width: 100%;
+    display: flex;
+    margin: 30px 0 5px 0;
+    height: 10px;
+	position:relative;
+}
+.jauge-grade{position:absolute;z-index:1;width:0;height:100%;background-color:#F00}
+.grade p{
+    font-size: var(--small-title);
+
+}
+.grade div{
+    width: calc(100% / 5);
+    height: 10px;
+}
+.niveau1{
+    background-color: #f3f0ff;
+}
+.niveau2{
+    background-color: #e5dbff;
+
+}
+.niveau3{
+    background-color: #b197fc;
+
+}
+.niveau4{
+    background-color: #9775fa;
+
+}
+.niveau5{
+    box-shadow: 0 0 6px 0 #6f4bde;
+    background-color: #7841e6;
+}
+.apropos-lgp{
+    margin:100px 0 0 0;
+}
+.apropos-lgp .description-lgp h3{
+    font-size: var(--medium-title);
+    margin: 0 auto;
+    text-align: center;
+}
+.apropos-lgp .description-lgp p{
+    font-size: var(--small-title);
+ width: 290px;
+ margin: 0 auto;
+}
+
+.mySwiper{width:100%;max-width:1024px;margin:0 auto;display:block}
+.swiper {
+        width: 100%;
+        height: 100%;
+      }
+@media screen and (min-width:1024px){
+    .titre h1{
+        font-size: var(--big-title);
+        display: flex;
+    }
+ .apropos-photo-text{
+     display: flex;
+     width: 90%;
+     max-width: 1280px;
+     flex-direction: row-reverse;
+     float: right;
+     margin-bottom: 60px;
+ }
+ .apropos-photo{
+     width: 60%;
+     padding: 0 0 0 10px;
+ }
+ .apropos-photo-text .text{
+    width: 40%;
+    padding: 0 10px 0 0;
+    margin: 0px auto;
+    font-size: 14px;
+}
+.apropos-photo .image1{
+    width: 80%;
+    float: right;
+    height: 150px;
+    overflow: hidden;
+
+    }
+    .apropos-photo .image2{
+        width: 100%;
+    }
+	.apropos-photo .image3{
+	    width: 100%;
+	    min-height: 75vh;
+	    background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-attachment: local;
+	    }
+    .apropos-photo .decoration-x {
+        position: absolute;
+        width: 100px;
+        left: 100%;
+        top: 100%;
+        transform: translate(-100%, -75%);
+    }
+    .grade-nom{
+        display:none;
+        }
+    .grade-nom2{
+        display: block;
+        }
+        .membre{
+            /* width: 80%; */
+            text-align: initial;
+            margin: 40px auto;
+            max-width: 1100px;
+            display: flex;
+        }
+        .membre:nth-child(2n){
+            flex-direction:row-reverse;
+        }
+        .gauche{
+            width: 50%;
+            padding-right: 5px;
+        }
+        .droite{
+            width: 50%;
+            padding-left: 5px;
+        }
+        .membre-text{
+            width: 100%;
+        }
+        .competences{
+            display: flex;
+        }
+        .competence{
+            width: calc(100% / 3);
+            padding: 0 5px;
+        }
+}
