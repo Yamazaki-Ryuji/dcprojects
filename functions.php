@@ -8,4 +8,5 @@ define('__CONTROLEURS_DIR__', __MVC_DIR__.'/controleurs' );
 require_once __MODELES_DIR__.'/functions-init.php';
 require_once __MODELES_DIR__.'/functions-supports.php';
 require_once __MODELES_DIR__.'/functions-acf.php';
+require_once __MODELES_DIR__.'/functions-woocommerce.php';
 require_once __MODELES_DIR__.'/functions-css-js.php';
